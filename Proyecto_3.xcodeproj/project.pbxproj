@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D5AFA02290C1B0400A338C4 /* Proyecto_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5AFA02290C1B0400A338C4 /* SL School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SL School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5AFA05290C1B0400A338C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D5AFA07290C1B0400A338C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D5AFA09290C1B0400A338C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		3D5AFA03290C1B0400A338C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D5AFA02290C1B0400A338C4 /* Proyecto_3.app */,
+				3D5AFA02290C1B0400A338C4 /* SL School.app */,
 				3D5AFA18290C1B0700A338C4 /* Proyecto_3Tests.xctest */,
 				3D5AFA23290C1B0700A338C4 /* Proyecto_3UITests.xctest */,
 			);
@@ -99,13 +99,10 @@
 		3D5AFA04290C1B0400A338C4 /* Proyecto_3 */ = {
 			isa = PBXGroup;
 			children = (
-				3D5AFA05290C1B0400A338C4 /* AppDelegate.swift */,
-				3D5AFA07290C1B0400A338C4 /* SceneDelegate.swift */,
-				3D5AFA09290C1B0400A338C4 /* ViewController.swift */,
-				3D5AFA0B290C1B0400A338C4 /* Main.storyboard */,
-				3D5AFA0E290C1B0600A338C4 /* Assets.xcassets */,
-				3D5AFA10290C1B0600A338C4 /* LaunchScreen.storyboard */,
-				3D5AFA13290C1B0600A338C4 /* Info.plist */,
+				3D5AFA38290C1B7D00A338C4 /* Delegue */,
+				3D5AFA36290C1B4500A338C4 /* Assetes */,
+				3D5AFA35290C1B2F00A338C4 /* Vistas */,
+				3D5AFA37290C1B5A00A338C4 /* Controllers */,
 			);
 			path = Proyecto_3;
 			sourceTree = "<group>";
@@ -128,6 +125,41 @@
 			path = Proyecto_3UITests;
 			sourceTree = "<group>";
 		};
+		3D5AFA35290C1B2F00A338C4 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				3D5AFA0B290C1B0400A338C4 /* Main.storyboard */,
+				3D5AFA10290C1B0600A338C4 /* LaunchScreen.storyboard */,
+			);
+			name = Vistas;
+			sourceTree = "<group>";
+		};
+		3D5AFA36290C1B4500A338C4 /* Assetes */ = {
+			isa = PBXGroup;
+			children = (
+				3D5AFA13290C1B0600A338C4 /* Info.plist */,
+				3D5AFA0E290C1B0600A338C4 /* Assets.xcassets */,
+			);
+			name = Assetes;
+			sourceTree = "<group>";
+		};
+		3D5AFA37290C1B5A00A338C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D5AFA09290C1B0400A338C4 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D5AFA38290C1B7D00A338C4 /* Delegue */ = {
+			isa = PBXGroup;
+			children = (
+				3D5AFA05290C1B0400A338C4 /* AppDelegate.swift */,
+				3D5AFA07290C1B0400A338C4 /* SceneDelegate.swift */,
+			);
+			name = Delegue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +177,7 @@
 			);
 			name = Proyecto_3;
 			productName = Proyecto_3;
-			productReference = 3D5AFA02290C1B0400A338C4 /* Proyecto_3.app */;
+			productReference = 3D5AFA02290C1B0400A338C4 /* SL School.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3D5AFA17290C1B0700A338C4 /* Proyecto_3Tests */ = {
@@ -441,7 +473,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.ulsa.Proyecto-3";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SL School";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +490,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.ulsa.Proyecto-3";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SL School";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
