@@ -41,3 +41,5 @@ class PerfilController: UIViewController {
         lblNumeroDos.text = tutor
     }
 }
+
+//HACER CON UN MODELO
