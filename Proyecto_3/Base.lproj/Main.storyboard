@@ -263,7 +263,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pAW-S2-N5b">
-                                <rect key="frame" x="20" y="92" width="374" height="770"/>
+                                <rect key="frame" x="20" y="92" width="374" height="373"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaPago" rowHeight="69" id="Bc8-CW-jW7" customClass="CeldaPagoController" customModule="SL_School" customModuleProvider="target">
@@ -323,63 +323,67 @@
                                             <outlet property="lblMes" destination="Hkk-8t-psP" id="d8e-Tb-zDo"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="303" id="bPa-AO-1CZ">
-                                        <rect key="frame" x="0.0" y="119" width="374" height="303"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPa-AO-1CZ" id="SWg-Fi-34j">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="303"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-eM-EcO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="303"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagos Realizados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mJF-EC-ZQZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="dVs-pb-Sfl">
-                                                            <rect key="frame" x="0.0" y="94" width="374" height="70"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dVs-pb-Sfl" id="FNz-md-LNX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Septiembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVB-32-kqE">
-                                                                        <rect key="frame" x="20" y="11" width="89" height="21"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de Pago: 15 de Septiembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-RG-xbw">
-                                                                        <rect key="frame" x="20" y="40" width="190" height="15"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </tableViewCellContentView>
-                                                        </tableViewCell>
-                                                    </prototypes>
-                                                </tableView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="fpT-eM-EcO" firstAttribute="top" secondItem="SWg-Fi-34j" secondAttribute="top" id="A23-5V-gqr"/>
-                                                <constraint firstAttribute="bottom" secondItem="fpT-eM-EcO" secondAttribute="bottom" id="jj6-3Y-qed"/>
-                                                <constraint firstItem="fpT-eM-EcO" firstAttribute="leading" secondItem="SWg-Fi-34j" secondAttribute="leading" id="sIm-CR-81e"/>
-                                                <constraint firstAttribute="trailing" secondItem="fpT-eM-EcO" secondAttribute="trailing" id="tGa-pl-FnJ"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="z0i-XJ-51V" id="WfJ-IC-wdU"/>
                                     <outlet property="delegate" destination="z0i-XJ-51V" id="uNR-yX-Lch"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-eM-EcO">
+                                <rect key="frame" x="20" y="473" width="374" height="389"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagos Realizados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mJF-EC-ZQZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaPagos" rowHeight="70" id="dVs-pb-Sfl" customClass="CeldaPagosController" customModule="SL_School" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="374" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dVs-pb-Sfl" id="FNz-md-LNX">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVB-32-kqE">
+                                                    <rect key="frame" x="20" y="11" width="32.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 de Septiembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-RG-xbw">
+                                                    <rect key="frame" x="174" y="40" width="100" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de Pago Realizado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-zB-OdV">
+                                                    <rect key="frame" x="20" y="40" width="146" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rMq-RG-xbw" firstAttribute="top" secondItem="FNz-md-LNX" secondAttribute="topMargin" constant="29" id="HyQ-CR-VLd"/>
+                                                <constraint firstItem="YCI-zB-OdV" firstAttribute="leading" secondItem="FNz-md-LNX" secondAttribute="leadingMargin" id="JI1-3T-piq"/>
+                                                <constraint firstItem="vVB-32-kqE" firstAttribute="top" secondItem="FNz-md-LNX" secondAttribute="topMargin" id="Mkh-dJ-IEE"/>
+                                                <constraint firstItem="YCI-zB-OdV" firstAttribute="top" secondItem="vVB-32-kqE" secondAttribute="bottom" constant="8" symbolic="YES" id="S29-6e-JJV"/>
+                                                <constraint firstItem="vVB-32-kqE" firstAttribute="leading" secondItem="FNz-md-LNX" secondAttribute="leadingMargin" id="cnx-M7-FSB"/>
+                                                <constraint firstItem="rMq-RG-xbw" firstAttribute="leading" secondItem="YCI-zB-OdV" secondAttribute="trailing" constant="8" symbolic="YES" id="fyR-Nf-XKx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblFecha" destination="rMq-RG-xbw" id="qij-1L-eG5"/>
+                                            <outlet property="lblMes" destination="vVB-32-kqE" id="D7d-Rn-xEk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="z0i-XJ-51V" id="gaX-gn-xLA"/>
+                                    <outlet property="delegate" destination="z0i-XJ-51V" id="zXy-Mv-hV8"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -388,15 +392,23 @@
                         <constraints>
                             <constraint firstItem="pAW-S2-N5b" firstAttribute="leading" secondItem="2F1-lL-qAY" secondAttribute="leading" constant="20" id="5XS-2d-uQA"/>
                             <constraint firstItem="2F1-lL-qAY" firstAttribute="trailing" secondItem="pAW-S2-N5b" secondAttribute="trailing" constant="20" id="8PR-iG-yBZ"/>
+                            <constraint firstItem="2F1-lL-qAY" firstAttribute="trailing" secondItem="fpT-eM-EcO" secondAttribute="trailing" constant="20" id="QgG-Sp-usC"/>
                             <constraint firstItem="pAW-S2-N5b" firstAttribute="top" secondItem="2F1-lL-qAY" secondAttribute="top" id="WNO-as-11r"/>
-                            <constraint firstItem="pAW-S2-N5b" firstAttribute="bottom" secondItem="2F1-lL-qAY" secondAttribute="bottom" id="phL-4m-X7h"/>
+                            <constraint firstItem="fpT-eM-EcO" firstAttribute="top" secondItem="pAW-S2-N5b" secondAttribute="bottom" constant="8" symbolic="YES" id="ZDm-RL-FVm"/>
+                            <constraint firstItem="pAW-S2-N5b" firstAttribute="height" secondItem="wQm-AO-rcx" secondAttribute="height" multiplier="0.416295" id="m04-aF-NvO"/>
+                            <constraint firstItem="fpT-eM-EcO" firstAttribute="leading" secondItem="2F1-lL-qAY" secondAttribute="leading" constant="20" id="rZe-KZ-mQh"/>
+                            <constraint firstItem="fpT-eM-EcO" firstAttribute="bottom" secondItem="2F1-lL-qAY" secondAttribute="bottom" id="z2r-Ju-2vC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calendario de Pagos" id="k9I-FE-EKr"/>
+                    <connections>
+                        <outlet property="tvPago" destination="pAW-S2-N5b" id="m1k-PH-GWb"/>
+                        <outlet property="tvPagos" destination="fpT-eM-EcO" id="ykx-ny-xef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLe-gv-dKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="406" y="1003"/>
+            <point key="canvasLocation" x="405.79710144927537" y="1002.4553571428571"/>
         </scene>
         <!--Evaluación Docente-->
         <scene sceneID="lyX-HD-AIf">
@@ -503,13 +515,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NombreComida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-pp-Nja">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombreComida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-pp-Nja">
                                                     <rect key="frame" x="20" y="11" width="120" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ri-jR-0d5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ri-jR-0d5">
                                                     <rect key="frame" x="20" y="40" width="49" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -550,6 +562,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="04D-iI-lJ6" secondAttribute="trailing" id="0oV-OI-ixw"/>
                                                 <constraint firstAttribute="trailing" secondItem="ny4-te-UUZ" secondAttribute="trailing" id="1JB-Ei-sGU"/>
+                                                <constraint firstItem="5ri-jR-0d5" firstAttribute="leading" secondItem="hpB-LE-nKD" secondAttribute="leadingMargin" id="9Qh-gj-lCq"/>
                                                 <constraint firstItem="ny4-te-UUZ" firstAttribute="top" secondItem="hpB-LE-nKD" secondAttribute="top" constant="-16" id="DQl-X7-7q9"/>
                                                 <constraint firstItem="zcU-Ez-gWb" firstAttribute="top" secondItem="5ri-jR-0d5" secondAttribute="bottom" constant="12" id="FMf-N2-COK"/>
                                                 <constraint firstItem="5Va-sI-Ohm" firstAttribute="top" secondItem="8Ng-pp-Nja" secondAttribute="bottom" constant="37" id="MJ2-oj-tOT"/>
@@ -564,6 +577,7 @@
                                                 <constraint firstItem="ny4-te-UUZ" firstAttribute="width" secondItem="hpB-LE-nKD" secondAttribute="width" multiplier="0.473262" id="lZk-im-1Pg"/>
                                                 <constraint firstItem="04D-iI-lJ6" firstAttribute="top" secondItem="hpB-LE-nKD" secondAttribute="top" id="oAn-r8-881"/>
                                                 <constraint firstItem="ny4-te-UUZ" firstAttribute="leading" secondItem="5Va-sI-Ohm" secondAttribute="trailing" constant="52" id="oNC-ZS-fV5"/>
+                                                <constraint firstItem="8Ng-pp-Nja" firstAttribute="leading" secondItem="hpB-LE-nKD" secondAttribute="leadingMargin" id="oOL-T0-ja8"/>
                                                 <constraint firstItem="5ri-jR-0d5" firstAttribute="top" secondItem="8Ng-pp-Nja" secondAttribute="bottom" constant="8" id="pe1-9M-LCn"/>
                                                 <constraint firstItem="04D-iI-lJ6" firstAttribute="leading" secondItem="5Va-sI-Ohm" secondAttribute="trailing" constant="52" id="ude-9d-nxn"/>
                                                 <constraint firstItem="04D-iI-lJ6" firstAttribute="width" secondItem="hpB-LE-nKD" secondAttribute="width" multiplier="0.473262" id="wq6-zE-tbE"/>
