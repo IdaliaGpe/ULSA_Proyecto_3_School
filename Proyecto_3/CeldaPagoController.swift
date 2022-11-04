@@ -10,8 +10,8 @@ import UIKit
 
 class CeldaPagoController : UITableViewCell {
     
+    //TvUno
     @IBOutlet weak var lblMes: UILabel!
     @IBOutlet weak var lblCosto: UILabel!
     @IBOutlet weak var lblFecha: UILabel!
-    
 }

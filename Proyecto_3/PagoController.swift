@@ -27,11 +27,13 @@ class PagoController: UIViewController, UITableViewDelegate, UITableViewDataSour
         pago.append(Pago(mes: "Octubre", limite: "3 de Noviembre", costo: "1255"))
         pago.append(Pago(mes: "Noviembre", limite: "14 de Diciembre", costo: "1300"))
         pago.append(Pago(mes: "Diciembre", limite: "13 de Diciembre", costo: "2400"))
+        pago.append(Pago(mes: "Inscripcion", limite: "6 de Enero", costo: "5000"))
         
+        pagos.append(Pagos(mes: "Inscripcion", pagado: "30 de Junio"))
         pagos.append(Pagos(mes: "Agosto", pagado: "20 de Agosto"))
         pagos.append(Pagos(mes: "Septiembre", pagado: "15 de Septiembre"))
         pagos.append(Pagos(mes: "Octubre", pagado: "15 de Septiembre"))
-        pagos.append(Pagos(mes: "Noviembre", pagado: "1 de Octubre"))
+        //pagos.append(Pagos(mes: "Noviembre", pagado: "1 de Octubre"))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,7 +42,6 @@ class PagoController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         return 1
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == tvPago {
             return pago.count
@@ -49,23 +50,28 @@ class PagoController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPago") as! CeldaPagoController
-        
-        celda.lblMes.text = pago[indexPath.row].mes
-        celda.lblFecha.text = pago[indexPath.row].limite
-        celda.lblCosto.text = pago[indexPath.row].costo
-        
-        return celda
+  
+        if tableView == tvPago {
+            let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPago") as! CeldaPagoController
+            
+            //TvUno
+            celda.lblMes.text = pago[indexPath.row].mes
+            celda.lblFecha.text = pago[indexPath.row].limite
+            celda.lblCosto.text = pago[indexPath.row].costo
+            
+            return celda
+            
+        }else {
+            let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPagos") as! CeldaPagosController
+            
+            //TvDos
+            celda.lblMess.text = pagos[indexPath.row].mes
+            celda.lblFecha.text = pagos[indexPath.row].pagado
+                
+            return celda
+        }
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPagos") as! CeldaPagosController
-        
-        celda.lblMess.text = pagos[indexPath.row].mes
-        celda.lblFecha.text = pagos[indexPath.row].pagado
-        
-        return celda
-    }
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         69
