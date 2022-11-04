@@ -617,10 +617,10 @@
             </objects>
             <point key="canvasLocation" x="1905.7971014492755" y="922.76785714285711"/>
         </scene>
-        <!--Clases-->
+        <!--Asistencias-->
         <scene sceneID="rek-Oo-G6g">
             <objects>
-                <viewController id="rZj-vP-NOm" sceneMemberID="viewController">
+                <viewController id="rZj-vP-NOm" customClass="AsistenciaController" customModule="SL_School" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nKT-5K-7Y9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -629,7 +629,7 @@
                                 <rect key="frame" x="20" y="92" width="374" height="770"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="wVE-bf-OFg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="wVE-bf-OFg" customClass="CeldaAsistenciaController" customModule="SL_School" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="374" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wVE-bf-OFg" id="pnF-91-WjX">
@@ -642,20 +642,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horario: 2pm - 4pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fy-sQ-Wpp">
-                                                    <rect key="frame" x="20" y="49" width="150.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horario:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fy-sQ-Wpp">
+                                                    <rect key="frame" x="20" y="49" width="61" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aula: A15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyp-b3-MUp">
-                                                    <rect key="frame" x="20" y="107" width="70" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aula:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyp-b3-MUp">
+                                                    <rect key="frame" x="20" y="107" width="38" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maestro: Luis Olea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnv-9S-lva">
-                                                    <rect key="frame" x="20" y="78" width="142" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maestro:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnv-9S-lva">
+                                                    <rect key="frame" x="20" y="78" width="67" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -670,20 +670,52 @@
                                                     <color key="textColor" systemColor="systemPinkColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAS-cS-Efo">
+                                                    <rect key="frame" x="89" y="49" width="35" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM9-b6-h7N">
+                                                    <rect key="frame" x="68" y="107" width="28" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2d-aM-uLd">
+                                                    <rect key="frame" x="95" y="78" width="62" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="D0a-IN-Eer" firstAttribute="leading" secondItem="pnF-91-WjX" secondAttribute="leadingMargin" id="0Zy-u7-UcH"/>
+                                                <constraint firstItem="sM9-b6-h7N" firstAttribute="top" secondItem="mnv-9S-lva" secondAttribute="bottom" constant="8" symbolic="YES" id="2KL-XO-0L6"/>
+                                                <constraint firstItem="W2d-aM-uLd" firstAttribute="top" secondItem="DAS-cS-Efo" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ad-vt-TWf"/>
                                                 <constraint firstItem="kyp-b3-MUp" firstAttribute="leading" secondItem="pnF-91-WjX" secondAttribute="leadingMargin" id="6Ag-4n-512"/>
                                                 <constraint firstItem="0fy-sQ-Wpp" firstAttribute="leading" secondItem="pnF-91-WjX" secondAttribute="leadingMargin" id="AbE-q2-nDP"/>
+                                                <constraint firstItem="DAS-cS-Efo" firstAttribute="leading" secondItem="0fy-sQ-Wpp" secondAttribute="trailing" constant="8" symbolic="YES" id="KKz-rt-KGx"/>
                                                 <constraint firstItem="mnv-9S-lva" firstAttribute="top" secondItem="0fy-sQ-Wpp" secondAttribute="bottom" constant="8" id="QAk-Zh-OmL"/>
+                                                <constraint firstItem="sM9-b6-h7N" firstAttribute="leading" secondItem="kyp-b3-MUp" secondAttribute="trailing" constant="10" id="Qla-bn-XcJ"/>
+                                                <constraint firstItem="W2d-aM-uLd" firstAttribute="leading" secondItem="mnv-9S-lva" secondAttribute="trailing" constant="8" symbolic="YES" id="VHl-WG-HJi"/>
                                                 <constraint firstItem="kyp-b3-MUp" firstAttribute="top" secondItem="mnv-9S-lva" secondAttribute="bottom" constant="8" id="XLh-3e-bPI"/>
                                                 <constraint firstItem="0fy-sQ-Wpp" firstAttribute="top" secondItem="D0a-IN-Eer" secondAttribute="bottom" constant="8" id="Xm1-rk-sBF"/>
                                                 <constraint firstItem="PVm-Df-VAZ" firstAttribute="trailing" secondItem="pnF-91-WjX" secondAttribute="trailingMargin" id="fLv-zg-Eap"/>
                                                 <constraint firstItem="mnv-9S-lva" firstAttribute="leading" secondItem="pnF-91-WjX" secondAttribute="leadingMargin" id="hwy-99-D0P"/>
                                                 <constraint firstItem="D0a-IN-Eer" firstAttribute="top" secondItem="pnF-91-WjX" secondAttribute="topMargin" id="ksj-DD-AwU"/>
                                                 <constraint firstItem="PVm-Df-VAZ" firstAttribute="top" secondItem="pnF-91-WjX" secondAttribute="topMargin" constant="46" id="mMU-HY-fRB"/>
+                                                <constraint firstItem="DAS-cS-Efo" firstAttribute="top" secondItem="D0a-IN-Eer" secondAttribute="bottom" constant="8" symbolic="YES" id="pWw-de-4nI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblAdvertencia" destination="xDI-Xp-ZZq" id="wfH-yc-LRG"/>
+                                            <outlet property="lblAula" destination="sM9-b6-h7N" id="BAN-mP-NdG"/>
+                                            <outlet property="lblHora" destination="DAS-cS-Efo" id="vzJ-nt-qhB"/>
+                                            <outlet property="lblMateria" destination="D0a-IN-Eer" id="R6t-wz-YKO"/>
+                                            <outlet property="lblNombre" destination="W2d-aM-uLd" id="gQX-L2-6yp"/>
+                                            <outlet property="swCheck" destination="PVm-Df-VAZ" id="7RN-2b-jqn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -697,7 +729,7 @@
                             <constraint firstItem="X6x-XL-k94" firstAttribute="leading" secondItem="kek-iQ-ZUx" secondAttribute="leading" constant="20" id="vd1-09-V7r"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Clases" id="NgW-ic-VNs"/>
+                    <navigationItem key="navigationItem" title="Asistencias" id="NgW-ic-VNs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giU-x9-VwX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

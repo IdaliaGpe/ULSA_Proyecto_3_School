@@ -17,6 +17,9 @@
 		3D5AFA1D290C1B0700A338C4 /* Proyecto_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5AFA1C290C1B0700A338C4 /* Proyecto_3Tests.swift */; };
 		3D5AFA28290C1B0700A338C4 /* Proyecto_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5AFA27290C1B0700A338C4 /* Proyecto_3UITests.swift */; };
 		FB16783E29155F7A00460103 /* CeldaPagosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16783D29155F7A00460103 /* CeldaPagosController.swift */; };
+		FB167841291565C400460103 /* AsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB167840291565C400460103 /* AsistenciaController.swift */; };
+		FB1678432915674C00460103 /* Asistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678422915674C00460103 /* Asistencia.swift */; };
+		FB1678462915687400460103 /* CeldaAsistenciaControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */; };
 		FB768EC72912B5B900156F61 /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768EC62912B5B900156F61 /* Horario.swift */; };
 		FB768EC92912B62800156F61 /* HorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768EC82912B62800156F61 /* HorarioController.swift */; };
 		FB768ECC2912B76000156F61 /* CeldaHorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768ECB2912B76000156F61 /* CeldaHorarioController.swift */; };
@@ -65,6 +68,9 @@
 		3D5AFA27290C1B0700A338C4 /* Proyecto_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto_3UITests.swift; sourceTree = "<group>"; };
 		3D5AFA29290C1B0700A338C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB16783D29155F7A00460103 /* CeldaPagosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPagosController.swift; sourceTree = "<group>"; };
+		FB167840291565C400460103 /* AsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsistenciaController.swift; sourceTree = "<group>"; };
+		FB1678422915674C00460103 /* Asistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asistencia.swift; sourceTree = "<group>"; };
+		FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaControllelr.swift; sourceTree = "<group>"; };
 		FB768EC62912B5B900156F61 /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
 		FB768EC82912B62800156F61 /* HorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioController.swift; sourceTree = "<group>"; };
 		FB768ECB2912B76000156F61 /* CeldaHorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaHorarioController.swift; sourceTree = "<group>"; };
@@ -176,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC0C8F429117CB000057EE1 /* HomeController.swift */,
+				FB1678442915684100460103 /* Asistencia */,
 				FB768EC52912B56300156F61 /* Perfil */,
 				FB768ECA2912B74600156F61 /* Horario */,
 				FB768ECD2912BCF200156F61 /* Menu */,
@@ -191,6 +198,15 @@
 				3D5AFA07290C1B0400A338C4 /* SceneDelegate.swift */,
 			);
 			name = Delegue;
+			sourceTree = "<group>";
+		};
+		FB1678442915684100460103 /* Asistencia */ = {
+			isa = PBXGroup;
+			children = (
+				FB167840291565C400460103 /* AsistenciaController.swift */,
+				FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */,
+			);
+			name = Asistencia;
 			sourceTree = "<group>";
 		};
 		FB768EC52912B56300156F61 /* Perfil */ = {
@@ -234,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC0C8F2291175A300057EE1 /* Contacto.swift */,
+				FB1678422915674C00460103 /* Asistencia.swift */,
 				FB768EC62912B5B900156F61 /* Horario.swift */,
 				FB768ED32912BD3A00156F61 /* Menu.swift */,
 				FB768EDA2912C65000156F61 /* Pago.swift */,
@@ -374,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB626D229140597000D914A /* Pagos.swift in Sources */,
+				FB167841291565C400460103 /* AsistenciaController.swift in Sources */,
 				FB768ECF2912BD1B00156F61 /* MenuController.swift in Sources */,
 				FB768ED22912BD3100156F61 /* CeldaMenuController.swift in Sources */,
 				FB768ED72912C62A00156F61 /* PagoController.swift in Sources */,
@@ -386,7 +404,9 @@
 				FB768ED42912BD3A00156F61 /* Menu.swift in Sources */,
 				FB768EC72912B5B900156F61 /* Horario.swift in Sources */,
 				FBC0C8F529117CB000057EE1 /* HomeController.swift in Sources */,
+				FB1678432915674C00460103 /* Asistencia.swift in Sources */,
 				3D5AFA06290C1B0400A338C4 /* AppDelegate.swift in Sources */,
+				FB1678462915687400460103 /* CeldaAsistenciaControllelr.swift in Sources */,
 				3D5AFA08290C1B0400A338C4 /* SceneDelegate.swift in Sources */,
 				3D2ECB3B29101CBC0079C163 /* PerfilController.swift in Sources */,
 				FB768EDB2912C65000156F61 /* Pago.swift in Sources */,
