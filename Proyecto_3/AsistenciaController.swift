@@ -17,6 +17,8 @@ class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         
         check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15", adv: "Sin Confirmar"))
+        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13", adv: "Sin Confirmar"))
+        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4", adv: "Sin Confirmar"))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,12 +40,11 @@ class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewD
         celda.lblAula.text = check[indexPath.row].aula
         
         celda.lblAdvertencia.text = check[indexPath.row].adv
-        celda.swCheck.
     
         return celda
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 145
     }
 }

@@ -8,46 +8,60 @@
 
 import UIKit
 
-class PerfilController: UIViewController {
+class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Outlets
-    @IBOutlet weak var lblNombre: UILabel!
-    @IBOutlet weak var lblTutor: UILabel!
-    @IBOutlet weak var lblNumeroUno: UILabel!
-    @IBOutlet weak var lblNumeroDos: UILabel!
+    @IBOutlet weak var tvContacto: UITableView!
     
     //Variables
-    var contacto : Contacto?
+    var contacto : [Contacto] = []
     
     //Codigo
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        contacto.append(Contacto(nombre: "Jose Padilla", tutor: "Padre", numerouno: "6442265183", numerodos: "64414367199"))
+        contacto.append(Contacto(nombre: "Idalia Aispuro", tutor: "Madre", numerouno: "6442265183", numerodos: "64414367199"))
+        contacto.append(Contacto(nombre: "Domingo Aispuro", tutor: "Abuelo", numerouno: "6442265183", numerodos: "64414367199"))
+        contacto.append(Contacto(nombre: "Eduardo Padilla", tutor: "Hermano", numerouno: "6442265183", numerodos: "64414367199"))
     }
     
     //Codigo Destino
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToContacto" {
             let destino = segue.destination as! ActualizarPController
-            destino.tutor = lblNombre.text
-            destino.tutor = lblTutor.text
-            destino.tutor = lblNumeroUno.text
-            destino.tutor = lblNumeroDos.text
-            //Esto es lo que debemos corregir
-            
-            //destino.contacto = contacto
+            destino.contacto = contacto[tvContacto.indexPathForSelectedRow!.row]
             destino.callbackGuardar = guardarDatos
         }
     }
     
     //Actualizar
-    func guardarDatos(tutor: String) {
-        lblNombre.text = tutor
-        lblTutor.text = tutor
-        lblNumeroUno.text = tutor
-        lblNumeroDos.text = tutor
-        //lblNombre.text = self.contacto?.nombre
-        //lblTutor.text = self.contacto?.tutor
-        //lblNumeroUno.text = self.contacto?.numerouno
-        //lblNumeroDos.text = self.contacto?.numerodos
+    func guardarDatos() {
+        tvContacto.reloadData()
+    }
+    
+    //Tabla
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return contacto.count
+        }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaContacto") as! CeldaActualizarContorller
+        
+        celda.lblNombre.text = contacto[indexPath.row].nombre
+        celda.lblTutor.text = contacto[indexPath.row].tutor
+        celda.lblNumeroUno.text = contacto[indexPath.row].numerouno
+        celda.lblNumeroDos.text = contacto[indexPath.row].numerodos
+        
+        return celda
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
     }
 }

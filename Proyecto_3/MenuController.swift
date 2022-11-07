@@ -21,6 +21,9 @@ class MenuController : UIViewController, UITableViewDelegate, UITableViewDataSou
         menu.append(Menu(nombre: "Sopa de Camaron", timpo: "Comida del Dia", horapedido: "2pm", costo: "50", imagen: ""))
         menu.append(Menu(nombre: "Sandwich", timpo: "Diario", horapedido: "Siempre", costo: "23", imagen: ""))
         menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,6 +49,6 @@ class MenuController : UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 69
     }
 }
