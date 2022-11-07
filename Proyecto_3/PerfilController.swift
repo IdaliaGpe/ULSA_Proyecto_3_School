@@ -13,12 +13,42 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
     //Outlets
     @IBOutlet weak var tvContacto: UITableView!
     
+    @IBOutlet weak var imgFoto: UIImageView!
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var lblid: UILabel!
+    @IBOutlet weak var lblArea: UILabel!
+    @IBOutlet weak var lblEdificio: UILabel!
+    @IBOutlet weak var lblCoordinador: UILabel!
+    @IBOutlet weak var lblTutor: UILabel!
+    @IBOutlet weak var lblCarrera: UILabel!
+    @IBOutlet weak var lblGrupo: UILabel!
+    @IBOutlet weak var lblGrado: UILabel!
+    
     //Variables
     var contacto : [Contacto] = []
+    var alumno : Alumno?
     
     //Codigo
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if alumno != nil {
+            
+            lblNombre.text = alumno?.nombre
+            lblid.text = alumno?.id
+            lblArea.text = alumno?.area
+            lblEdificio.text = alumno?.edificio
+            lblCoordinador.text = alumno?.coordinador
+            lblTutor.text = alumno?.tutor
+            lblCarrera.text = alumno?.carreta
+            lblGrupo.text = alumno?.grupo
+            lblGrado.text = alumno?.grado
+            
+            imgFoto.layer.cornerRadius = 10
+            imgFoto.layer.borderWidth = 2
+            
+            imgFoto.image = UIImage(named: "\(alumno!.foto)")
+        }
         
         contacto.append(Contacto(nombre: "Jose Padilla", tutor: "Padre", numerouno: "6442265183", numerodos: "64414367199"))
         contacto.append(Contacto(nombre: "Idalia Aispuro", tutor: "Madre", numerouno: "6442265183", numerodos: "64414367199"))

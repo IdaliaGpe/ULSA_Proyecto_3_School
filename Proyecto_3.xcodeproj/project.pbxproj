@@ -21,6 +21,7 @@
 		FB1678432915674C00460103 /* Asistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678422915674C00460103 /* Asistencia.swift */; };
 		FB1678462915687400460103 /* CeldaAsistenciaControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */; };
 		FB3914FF291953360069F7BF /* CeldaActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3914FE291953360069F7BF /* CeldaActualizarController.swift */; };
+		FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF50429199F6E00D79FBF /* Alumno.swift */; };
 		FB768EC72912B5B900156F61 /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768EC62912B5B900156F61 /* Horario.swift */; };
 		FB768EC92912B62800156F61 /* HorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768EC82912B62800156F61 /* HorarioController.swift */; };
 		FB768ECC2912B76000156F61 /* CeldaHorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768ECB2912B76000156F61 /* CeldaHorarioController.swift */; };
@@ -73,6 +74,7 @@
 		FB1678422915674C00460103 /* Asistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asistencia.swift; sourceTree = "<group>"; };
 		FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaControllelr.swift; sourceTree = "<group>"; };
 		FB3914FE291953360069F7BF /* CeldaActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaActualizarController.swift; sourceTree = "<group>"; };
+		FB3FF50429199F6E00D79FBF /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		FB768EC62912B5B900156F61 /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
 		FB768EC82912B62800156F61 /* HorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioController.swift; sourceTree = "<group>"; };
 		FB768ECB2912B76000156F61 /* CeldaHorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaHorarioController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 		FBC0C8F12911758800057EE1 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				FB3FF50429199F6E00D79FBF /* Alumno.swift */,
 				FBC0C8F2291175A300057EE1 /* Contacto.swift */,
 				FB1678422915674C00460103 /* Asistencia.swift */,
 				FB768EC62912B5B900156F61 /* Horario.swift */,
@@ -400,6 +403,7 @@
 				FB768ED22912BD3100156F61 /* CeldaMenuController.swift in Sources */,
 				FB768ED72912C62A00156F61 /* PagoController.swift in Sources */,
 				FB16783E29155F7A00460103 /* CeldaPagosController.swift in Sources */,
+				FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */,
 				FB768ED92912C64100156F61 /* CeldaPagoController.swift in Sources */,
 				3D2ECB3D29101E3B0079C163 /* ActualizarPController.swift in Sources */,
 				FBC0C8F3291175A300057EE1 /* Contacto.swift in Sources */,
