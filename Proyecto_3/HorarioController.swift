@@ -11,12 +11,15 @@ import UIKit
 class HorarioController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Outlet
+    @IBOutlet weak var tvHorario: UITableView!
     
     //Variables
     var horario : [Horario] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tvHorario.backgroundColor = .clear
         
         horario.append(Horario(clase: "Matematicas", hora: "2pm - 4pm", maestro: "Luis Olea", aula: "A15"))
         horario.append(Horario(clase: "Moviles", hora: "7am - 10am", maestro: "Emiliano", aula: "D5"))
@@ -35,6 +38,8 @@ class HorarioController : UIViewController, UITableViewDelegate, UITableViewData
         
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaHorario") as!
         CeldaHorarioController
+        
+        //celda.contentView.backgroundColor = UIColor(red: 18/255, green: 45/255, blue: 218/255, alpha: 1)
         
         celda.lblClase.text = horario[indexPath.row].clase
         celda.lblHorario.text = horario[indexPath.row].hora

@@ -13,7 +13,7 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
     //Outlets
     @IBOutlet weak var tvContacto: UITableView!
     
-    @IBOutlet weak var imgFoto: UIImageView!
+    @IBOutlet weak var lblFoto: UIImageView!
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblid: UILabel!
     @IBOutlet weak var lblArea: UILabel!
@@ -44,10 +44,10 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
             lblGrupo.text = alumno?.grupo
             lblGrado.text = alumno?.grado
             
-            imgFoto.layer.cornerRadius = 10
-            imgFoto.layer.borderWidth = 2
-            
-            imgFoto.image = UIImage(named: "\(alumno!.foto)")
+            lblFoto.layer.cornerRadius = 10
+            lblFoto.layer.borderWidth = 2
+            lblFoto.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+            lblFoto.image = UIImage(named: "\(alumno!.foto)")
         }
         
         contacto.append(Contacto(nombre: "Jose Padilla", tutor: "Padre", numerouno: "6442265183", numerodos: "64414367199"))
