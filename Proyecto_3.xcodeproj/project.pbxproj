@@ -22,6 +22,10 @@
 		FB1678462915687400460103 /* CeldaAsistenciaControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */; };
 		FB3914FF291953360069F7BF /* CeldaActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3914FE291953360069F7BF /* CeldaActualizarController.swift */; };
 		FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF50429199F6E00D79FBF /* Alumno.swift */; };
+		FB5FE72D291AAED300F2957B /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE72C291AAED300F2957B /* EvaluacionController.swift */; };
+		FB5FE72F291AAEE600F2957B /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE72E291AAEE600F2957B /* Evaluacion.swift */; };
+		FB5FE731291AB01300F2957B /* CeldaEvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE730291AB01300F2957B /* CeldaEvaluacionController.swift */; };
+		FB5FE733291AB38800F2957B /* CalificarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE732291AB38800F2957B /* CalificarController.swift */; };
 		FB768EC72912B5B900156F61 /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768EC62912B5B900156F61 /* Horario.swift */; };
 		FB768EC92912B62800156F61 /* HorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768EC82912B62800156F61 /* HorarioController.swift */; };
 		FB768ECC2912B76000156F61 /* CeldaHorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB768ECB2912B76000156F61 /* CeldaHorarioController.swift */; };
@@ -75,6 +79,10 @@
 		FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaControllelr.swift; sourceTree = "<group>"; };
 		FB3914FE291953360069F7BF /* CeldaActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaActualizarController.swift; sourceTree = "<group>"; };
 		FB3FF50429199F6E00D79FBF /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		FB5FE72C291AAED300F2957B /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
+		FB5FE72E291AAEE600F2957B /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
+		FB5FE730291AB01300F2957B /* CeldaEvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEvaluacionController.swift; sourceTree = "<group>"; };
+		FB5FE732291AB38800F2957B /* CalificarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalificarController.swift; sourceTree = "<group>"; };
 		FB768EC62912B5B900156F61 /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
 		FB768EC82912B62800156F61 /* HorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioController.swift; sourceTree = "<group>"; };
 		FB768ECB2912B76000156F61 /* CeldaHorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaHorarioController.swift; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 				FB1678442915684100460103 /* Asistencia */,
 				FB768ECA2912B74600156F61 /* Horario */,
 				FB768ECD2912BCF200156F61 /* Menu */,
+				FB5FE72B291AAEB800F2957B /* Evaluacion */,
 				FB768ED52912C56A00156F61 /* Pagos */,
 			);
 			name = Controllers;
@@ -211,6 +220,16 @@
 				FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */,
 			);
 			name = Asistencia;
+			sourceTree = "<group>";
+		};
+		FB5FE72B291AAEB800F2957B /* Evaluacion */ = {
+			isa = PBXGroup;
+			children = (
+				FB5FE72C291AAED300F2957B /* EvaluacionController.swift */,
+				FB5FE730291AB01300F2957B /* CeldaEvaluacionController.swift */,
+				FB5FE732291AB38800F2957B /* CalificarController.swift */,
+			);
+			name = Evaluacion;
 			sourceTree = "<group>";
 		};
 		FB768EC52912B56300156F61 /* Perfil */ = {
@@ -259,6 +278,7 @@
 				FB1678422915674C00460103 /* Asistencia.swift */,
 				FB768EC62912B5B900156F61 /* Horario.swift */,
 				FB768ED32912BD3A00156F61 /* Menu.swift */,
+				FB5FE72E291AAEE600F2957B /* Evaluacion.swift */,
 				FB768EDA2912C65000156F61 /* Pago.swift */,
 				FBB626D129140597000D914A /* Pagos.swift */,
 			);
@@ -403,12 +423,16 @@
 				FB768ED22912BD3100156F61 /* CeldaMenuController.swift in Sources */,
 				FB768ED72912C62A00156F61 /* PagoController.swift in Sources */,
 				FB16783E29155F7A00460103 /* CeldaPagosController.swift in Sources */,
+				FB5FE72D291AAED300F2957B /* EvaluacionController.swift in Sources */,
 				FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */,
 				FB768ED92912C64100156F61 /* CeldaPagoController.swift in Sources */,
+				FB5FE72F291AAEE600F2957B /* Evaluacion.swift in Sources */,
 				3D2ECB3D29101E3B0079C163 /* ActualizarPController.swift in Sources */,
 				FBC0C8F3291175A300057EE1 /* Contacto.swift in Sources */,
+				FB5FE731291AB01300F2957B /* CeldaEvaluacionController.swift in Sources */,
 				FB768EC92912B62800156F61 /* HorarioController.swift in Sources */,
 				FB768ECC2912B76000156F61 /* CeldaHorarioController.swift in Sources */,
+				FB5FE733291AB38800F2957B /* CalificarController.swift in Sources */,
 				FB768ED42912BD3A00156F61 /* Menu.swift in Sources */,
 				FB768EC72912B5B900156F61 /* Horario.swift in Sources */,
 				FBC0C8F529117CB000057EE1 /* HomeController.swift in Sources */,
