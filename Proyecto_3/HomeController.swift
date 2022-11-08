@@ -21,6 +21,13 @@ class HomeController : UIViewController {
     @IBOutlet weak var imgCalendario: UIImageView!
     @IBOutlet weak var imgMenu: UIImageView!
     
+    @IBOutlet weak var vBarra: UIView!
+    @IBOutlet weak var vHorario: UIView!
+    @IBOutlet weak var vAsis: UIView!
+    @IBOutlet weak var vEva: UIView!
+    @IBOutlet weak var vCal: UIView!
+    @IBOutlet weak var vMenu: UIView!
+    
     //Variable
     var alumno : [Alumno] = []
     
@@ -65,6 +72,31 @@ class HomeController : UIViewController {
         imgMenu.layer.cornerRadius = 10
         imgMenu.layer.borderWidth = 2
         imgMenu.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        //View
+        vBarra.layer.cornerRadius = 2
+        //vBarra.layer.borderWidth = 2
+        //vBarra.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        vHorario.layer.cornerRadius = 10
+        vHorario.layer.borderWidth = 2
+        vHorario.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        vAsis.layer.cornerRadius = 10
+        vAsis.layer.borderWidth = 2
+        vAsis.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        vEva.layer.cornerRadius = 10
+        vEva.layer.borderWidth = 2
+        vEva.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        vCal.layer.cornerRadius = 10
+        vCal.layer.borderWidth = 2
+        vCal.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        vMenu.layer.cornerRadius = 10
+        vMenu.layer.borderWidth = 2
+        vMenu.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
