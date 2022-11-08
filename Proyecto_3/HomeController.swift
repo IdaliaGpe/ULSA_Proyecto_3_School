@@ -15,6 +15,12 @@ class HomeController : UIViewController {
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblid: UILabel!
     
+    @IBOutlet weak var imgFoto: UIImageView!
+    @IBOutlet weak var imgAsistencia: UIImageView!
+    @IBOutlet weak var imgEva: UIImageView!
+    @IBOutlet weak var imgCalendario: UIImageView!
+    @IBOutlet weak var imgMenu: UIImageView!
+    
     //Variable
     var alumno : [Alumno] = []
     
@@ -28,11 +34,37 @@ class HomeController : UIViewController {
         //Mostrar
         lblNombre.text = alumno[0].nombre
         lblid.text = alumno[0].id
-                    
+        
+        //Perfil
         lblFoto.layer.cornerRadius = 10
         lblFoto.layer.borderWidth = 2
         lblFoto.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
         lblFoto.image = UIImage(named: "\(alumno[0].foto)")
+                                
+        //Horario
+        imgFoto.layer.cornerRadius = 10
+        imgFoto.layer.borderWidth = 2
+        imgFoto.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        //Asistencia
+        imgAsistencia.layer.cornerRadius = 10
+        imgAsistencia.layer.borderWidth = 2
+        imgAsistencia.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        //Eva
+        imgEva.layer.cornerRadius = 10
+        imgEva.layer.borderWidth = 2
+        imgEva.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        //Calendario
+        imgCalendario.layer.cornerRadius = 10
+        imgCalendario.layer.borderWidth = 2
+        imgCalendario.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
+        
+        //Menu
+        imgMenu.layer.cornerRadius = 10
+        imgMenu.layer.borderWidth = 2
+        imgMenu.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
