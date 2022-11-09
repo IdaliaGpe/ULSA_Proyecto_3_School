@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AsistenciaController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     //Variables
     var check : [Asistencia] = []
@@ -16,35 +16,36 @@ class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15", adv: "Sin Confirmar"))
-        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13", adv: "Sin Confirmar"))
-        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4", adv: "Sin Confirmar"))
+        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15"))
+        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13"))
+        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4"))
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UICollectionView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return check.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaCheck") as!
-        CeldaAsistenciaController
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: "celdaChecks", for: indexPath) as! CeldaAsistenciaController
         
         celda.lblMateria.text = check[indexPath.row].materia
         celda.lblHora.text = check[indexPath.row].horario
         celda.lblNombre.text = check[indexPath.row].nombre
         celda.lblAula.text = check[indexPath.row].aula
         
-        celda.lblAdvertencia.text = check[indexPath.row].adv
+        celda.vFondo.layer.cornerRadius = 10
+        celda.vMarca.layer.cornerRadius = 10
+        celda.layer.cornerRadius = 2
     
         return celda
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 145
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 181, height: 181)
     }
 }

@@ -11,13 +11,11 @@ class Asistencia {
     var horario : String
     var nombre : String
     var aula : String
-    var adv : String
     
-    init(materia: String, horario: String, nombre: String, aula: String, adv: String) {
+    init(materia: String, horario: String, nombre: String, aula: String) {
         self.materia = materia
         self.horario = horario
         self.nombre = nombre
         self.aula = aula
-        self.adv = adv
     }
 }
