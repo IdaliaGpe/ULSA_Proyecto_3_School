@@ -17,4 +17,5 @@ class CeldaAsistenciaController: UICollectionViewCell {
     @IBOutlet weak var imgCheck: UIImageView!
     @IBOutlet weak var vFondo: UIView!
     @IBOutlet weak var vMarca: UIView!
+    
 }

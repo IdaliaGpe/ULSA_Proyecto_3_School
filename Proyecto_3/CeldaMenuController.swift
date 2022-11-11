@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class CeldaMenuController : UITableViewCell {
+class CeldaMenuController : UICollectionViewCell {
     
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblTiempo: UILabel!
@@ -15,4 +15,5 @@ class CeldaMenuController : UITableViewCell {
     @IBOutlet weak var lblCosto: UILabel!
     @IBOutlet weak var lblFoto: UIImageView!
     
+    @IBOutlet weak var vFondo: UIView!
 }

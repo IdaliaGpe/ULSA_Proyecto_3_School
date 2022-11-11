@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MenuController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     //Outlet
     
@@ -24,20 +24,26 @@ class MenuController : UIViewController, UITableViewDelegate, UITableViewDataSou
         menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
         menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
         menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UICollectionView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menu.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMenu") as!
-        CeldaMenuController
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: "celdaMenu", for: indexPath) as! CeldaMenuController
         
         celda.lblNombre.text = menu[indexPath.row].nombre
         celda.lblTiempo.text = menu[indexPath.row].timpo
@@ -45,10 +51,14 @@ class MenuController : UIViewController, UITableViewDelegate, UITableViewDataSou
         celda.lblCosto.text = menu[indexPath.row].costo
         celda.lblFoto.image = (UIImage(named: menu[indexPath.row].imagen))
     
+        celda.lblFoto.layer.cornerRadius = 10
+        celda.vFondo.layer.cornerRadius = 10
+        celda.layer.cornerRadius = 2
+    
         return celda
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 69
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 181, height: 181)
     }
 }

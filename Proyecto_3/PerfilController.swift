@@ -44,9 +44,8 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
             lblGrupo.text = alumno?.grupo
             lblGrado.text = alumno?.grado
             
+            lblFoto.layer.cornerRadius = 50
             lblFoto.layer.cornerRadius = 10
-            lblFoto.layer.borderWidth = 2
-            lblFoto.layer.borderColor = CGColor(red: 231/255, green: 231/255, blue: 238/255, alpha: 1)
             lblFoto.image = UIImage(named: "\(alumno!.foto)")
         }
         
@@ -68,6 +67,7 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
     //Actualizar
     func guardarDatos() {
         tvContacto.reloadData()
+        tvContacto.refreshControl?.endRefreshing()
     }
     
     //Tabla
