@@ -17,6 +17,7 @@ class CalificarController : UIViewController {
     @IBOutlet weak var vFondo: UIView!
     @IBOutlet weak var vBotton: UIView!
     
+    @IBOutlet weak var btnCal: UIButton!
     //Variables
     var eva : Evaluacion?
     var callbackGuardar : (() -> Void)?
@@ -36,10 +37,14 @@ class CalificarController : UIViewController {
             txtCall.text = eva!.cal
             txtComent.text = eva!.comentario
         }
+        
+        if (eva?.cal != ""){
+            btnCal.isEnabled = false
+        }
     }
     
     //Action
-    @IBAction func doTapGuardar(_ sender: Any) {
+        @IBAction func doTapGuardar(_ sender: Any) {
         if callbackGuardar != nil {
             eva?.cal = txtCall.text!
             eva?.comentario = txtComent.text!

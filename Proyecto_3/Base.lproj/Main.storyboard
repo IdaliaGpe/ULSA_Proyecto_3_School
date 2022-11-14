@@ -685,6 +685,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Evaluacion Docente" id="vB4-5V-4Sg"/>
                     <connections>
+                        <outlet property="btnCal" destination="lEG-tu-tsv" id="uiH-Tk-EnW"/>
                         <outlet property="txtCall" destination="9kg-YT-GO5" id="gLQ-Ad-CUd"/>
                         <outlet property="txtComent" destination="hMP-AL-Ixd" id="pGm-gg-JJ8"/>
                         <outlet property="vBotton" destination="cE9-1h-zbR" id="Mg1-LT-MTr"/>
