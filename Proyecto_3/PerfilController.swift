@@ -25,8 +25,8 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var lblGrado: UILabel!
     
     //Variables
-    var contacto : [Contacto] = []
     var alumno : Alumno?
+    var contacto :  [Contacto]?
     
     //Codigo
     override func viewDidLoad() {
@@ -48,26 +48,23 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
             lblFoto.layer.cornerRadius = 10
             lblFoto.image = UIImage(named: "\(alumno!.foto)")
         }
-        
-        contacto.append(Contacto(nombre: "Jose Padilla", tutor: "Padre", numerouno: "6442265183", numerodos: "64414367199"))
-        contacto.append(Contacto(nombre: "Idalia Aispuro", tutor: "Madre", numerouno: "6442265183", numerodos: "64414367199"))
-        contacto.append(Contacto(nombre: "Domingo Aispuro", tutor: "Abuelo", numerouno: "6442265183", numerodos: "64414367199"))
-        contacto.append(Contacto(nombre: "Eduardo Padilla", tutor: "Hermano", numerouno: "6442265183", numerodos: "64414367199"))
     }
     
     //Codigo Destino
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToContacto" {
             let destino = segue.destination as! ActualizarPController
-            destino.contacto = contacto[tvContacto.indexPathForSelectedRow!.row]
+            destino.contacto = contacto![tvContacto.indexPathForSelectedRow!.row]
             destino.callbackGuardar = guardarDatos
+        } else if segue.identifier == "goToContacto" {
+            let destino = segue.destination as! PerfilController
+            destino.contacto = contacto
         }
     }
     
     //Actualizar
     func guardarDatos() {
         tvContacto.reloadData()
-        tvContacto.refreshControl?.endRefreshing()
     }
     
     //Tabla
@@ -76,17 +73,17 @@ class PerfilController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return contacto.count
+         return contacto!.count
         }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaContacto") as! CeldaActualizarContorller
         
-        celda.lblNombre.text = contacto[indexPath.row].nombre
-        celda.lblTutor.text = contacto[indexPath.row].tutor
-        celda.lblNumeroUno.text = contacto[indexPath.row].numerouno
-        celda.lblNumeroDos.text = contacto[indexPath.row].numerodos
+        celda.lblNombre.text = contacto![indexPath.row].nombre
+        celda.lblTutor.text = contacto![indexPath.row].tutor
+        celda.lblNumeroUno.text = contacto![indexPath.row].numerouno
+        celda.lblNumeroDos.text = contacto![indexPath.row].numerodos
         
         return celda
     }
