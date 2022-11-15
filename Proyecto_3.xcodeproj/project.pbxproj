@@ -22,6 +22,7 @@
 		FB1678462915687400460103 /* CeldaAsistenciaControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */; };
 		FB3914FF291953360069F7BF /* CeldaActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3914FE291953360069F7BF /* CeldaActualizarController.swift */; };
 		FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF50429199F6E00D79FBF /* Alumno.swift */; };
+		FB5E1E1B2923F16D00865DD2 /* MarcarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E1E1A2923F16D00865DD2 /* MarcarController.swift */; };
 		FB5FE72D291AAED300F2957B /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE72C291AAED300F2957B /* EvaluacionController.swift */; };
 		FB5FE72F291AAEE600F2957B /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE72E291AAEE600F2957B /* Evaluacion.swift */; };
 		FB5FE731291AB01300F2957B /* CeldaEvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE730291AB01300F2957B /* CeldaEvaluacionController.swift */; };
@@ -79,6 +80,7 @@
 		FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaControllelr.swift; sourceTree = "<group>"; };
 		FB3914FE291953360069F7BF /* CeldaActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaActualizarController.swift; sourceTree = "<group>"; };
 		FB3FF50429199F6E00D79FBF /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		FB5E1E1A2923F16D00865DD2 /* MarcarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcarController.swift; sourceTree = "<group>"; };
 		FB5FE72C291AAED300F2957B /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
 		FB5FE72E291AAEE600F2957B /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
 		FB5FE730291AB01300F2957B /* CeldaEvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEvaluacionController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			children = (
 				FB167840291565C400460103 /* AsistenciaController.swift */,
 				FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */,
+				FB5E1E1A2923F16D00865DD2 /* MarcarController.swift */,
 			);
 			name = Asistencia;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				FB768ECF2912BD1B00156F61 /* MenuController.swift in Sources */,
 				FB768ED22912BD3100156F61 /* CeldaMenuController.swift in Sources */,
 				FB768ED72912C62A00156F61 /* PagoController.swift in Sources */,
+				FB5E1E1B2923F16D00865DD2 /* MarcarController.swift in Sources */,
 				FB16783E29155F7A00460103 /* CeldaPagosController.swift in Sources */,
 				FB5FE72D291AAED300F2957B /* EvaluacionController.swift in Sources */,
 				FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */,

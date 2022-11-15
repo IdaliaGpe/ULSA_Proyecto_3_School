@@ -8,14 +8,12 @@
 
 import UIKit
 
-class CeldaAsistenciaController: UICollectionViewCell {
+class CeldaAsistenciaController: UITableViewCell {
     
     @IBOutlet weak var lblMateria: UILabel!
     @IBOutlet weak var lblHora: UILabel!
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblAula: UILabel!
     @IBOutlet weak var imgCheck: UIImageView!
-    @IBOutlet weak var vFondo: UIView!
-    @IBOutlet weak var vMarca: UIView!
     
 }

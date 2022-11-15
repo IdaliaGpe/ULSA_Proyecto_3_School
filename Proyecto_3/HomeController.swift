@@ -32,6 +32,7 @@ class HomeController : UIViewController {
     var alumno : [Alumno] = []
     var contacto : [Contacto] = []
     var eva : [Evaluacion] = []
+    var check : [Asistencia] = []
     
     //Codigo
     override func viewDidLoad() {
@@ -51,6 +52,18 @@ class HomeController : UIViewController {
         eva.append(Evaluacion(materia: "Programacion Movil", nombre: "Emiliano", cal: "5", comentario: "Buen maestro, flexible, sabe explicar, educado, atento, comprometido, cumple el temario"))
         eva.append(Evaluacion(materia: "Flores", nombre: "Lorenzo", cal: "1", comentario: "Mal maestro, no es flexible, no sabe explicar, no es educado, para nada atento, no esta comprometido, y no cumple el temario"))
         eva.append(Evaluacion(materia: "Programacion 1", nombre: "Margarita", cal: "", comentario: ""))
+        
+        //InfoAsistencia
+        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15", asiste: false))
+        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13", asiste: false))
+        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4", asiste: false))
+        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15", asiste: false))
+        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13", asiste: false))
+        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4", asiste: false))
+        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15", asiste: false))
+        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13", asiste: false))
+        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4", asiste: false))
+        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4", asiste: false))
         
         //MostrarInfoAlumno
         lblNombre.text = alumno[0].nombre
@@ -111,6 +124,9 @@ class HomeController : UIViewController {
         } else if segue.identifier == "goToEncuesta" {
             let destino = segue.destination as! EvaluacionController
             destino.eva = eva
+        } else if segue.identifier == "goToAsis" {
+            let destino = segue.destination as! AsistenciaController
+            destino.check = check
         }
     }
     

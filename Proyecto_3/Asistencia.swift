@@ -11,11 +11,13 @@ class Asistencia {
     var horario : String
     var nombre : String
     var aula : String
+    var asiste : Bool
     
-    init(materia: String, horario: String, nombre: String, aula: String) {
+    init(materia: String, horario: String, nombre: String, aula: String, asiste: Bool) {
         self.materia = materia
         self.horario = horario
         self.nombre = nombre
         self.aula = aula
+        self.asiste = asiste
     }
 }

@@ -8,54 +8,57 @@
 
 import UIKit
 
-class AsistenciaController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var tvAsiste: UITableView!
     
     //Variables
-    var check : [Asistencia] = []
-    var checked = false
+    var check : [Asistencia]?
+    
+    var contacto :  [Contacto]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //Info
-        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15"))
-        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13"))
-        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4"))
-        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15"))
-        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13"))
-        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4"))
-        check.append(Asistencia(materia: "Matematicas", horario: "2pm - 5pm", nombre: "Luis Olea", aula: "A15"))
-        check.append(Asistencia(materia: "Ingles", horario: "12am - 2pm", nombre: "Oscar", aula: "A13"))
-        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4"))
-        check.append(Asistencia(materia: "Computacion", horario: "7am - 8am", nombre: "Juan", aula: "E4"))
+
     }
     
-    func numberOfSections(in tableView: UICollectionView) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return check.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return check!.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: "celdaChecks", for: indexPath) as! CeldaAsistenciaController
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaCheck") as! CeldaAsistenciaController
         
-        celda.lblMateria.text = check[indexPath.row].materia
-        celda.lblHora.text = check[indexPath.row].horario
-        celda.lblNombre.text = check[indexPath.row].nombre
-        celda.lblAula.text = check[indexPath.row].aula
-        
-        celda.vFondo.layer.cornerRadius = 10
-        celda.vMarca.layer.cornerRadius = 10
-        celda.layer.cornerRadius = 2
+        celda.lblMateria.text = check![indexPath.row].materia
+        celda.lblHora.text = check![indexPath.row].horario
+        celda.lblNombre.text = check![indexPath.row].nombre
+        celda.lblAula.text = check![indexPath.row].aula
     
         return celda
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 181, height: 181)
+        //if (check![indexPath.row].asiste == true)
+        //{
+            //celda.btnCheck.tintColor = UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1)
+            //celda.btnCheck.isEnabled = false
+
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 97
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToMarcar" {
+            let destino = segue.destination as! MarcarController
+            destino.contacto = contacto
+            destino.check = check![tvAsiste.indexPathForSelectedRow!.row]
+        }
     }
 }
