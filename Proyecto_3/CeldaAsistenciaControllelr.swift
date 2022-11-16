@@ -15,5 +15,6 @@ class CeldaAsistenciaController: UITableViewCell {
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblAula: UILabel!
     @IBOutlet weak var imgCheck: UIImageView!
+    @IBOutlet weak var lblFalta: UILabel!
     
 }

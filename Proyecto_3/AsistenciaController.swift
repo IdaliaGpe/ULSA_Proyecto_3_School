@@ -39,15 +39,17 @@ class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewD
         celda.lblHora.text = check![indexPath.row].horario
         celda.lblNombre.text = check![indexPath.row].nombre
         celda.lblAula.text = check![indexPath.row].aula
+        celda.lblFalta.text = check![indexPath.row].falta
     
+        if (check![indexPath.row].asiste == true){
+            celda.imgCheck.tintColor = UIColor(red: 0/255, green: 200/255, blue: 25/255, alpha: 1)
+        } else
+        {
+            celda.imgCheck.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
+        }
+        
         return celda
     }
-    
-        //if (check![indexPath.row].asiste == true)
-        //{
-            //celda.btnCheck.tintColor = UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1)
-            //celda.btnCheck.isEnabled = false
-
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 97
@@ -59,6 +61,11 @@ class AsistenciaController : UIViewController, UITableViewDelegate, UITableViewD
             let destino = segue.destination as! MarcarController
             destino.contacto = contacto
             destino.check = check![tvAsiste.indexPathForSelectedRow!.row]
+            destino.callBackAsistencia = checado
         }
     }
+    
+    func checado(){
+        tvAsiste.reloadData()
+        }
 }

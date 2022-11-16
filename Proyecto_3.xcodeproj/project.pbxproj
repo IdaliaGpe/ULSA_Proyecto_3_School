@@ -22,6 +22,8 @@
 		FB1678462915687400460103 /* CeldaAsistenciaControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */; };
 		FB3914FF291953360069F7BF /* CeldaActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3914FE291953360069F7BF /* CeldaActualizarController.swift */; };
 		FB3FF50529199F6E00D79FBF /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF50429199F6E00D79FBF /* Alumno.swift */; };
+		FB55CB8D29252B2A0061EE85 /* Freshman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB55CB8C29252B2A0061EE85 /* Freshman.ttf */; };
+		FB55CB8F29252B560061EE85 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB55CB8E29252B560061EE85 /* Roboto-Regular.ttf */; };
 		FB5E1E1B2923F16D00865DD2 /* MarcarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5E1E1A2923F16D00865DD2 /* MarcarController.swift */; };
 		FB5FE72D291AAED300F2957B /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE72C291AAED300F2957B /* EvaluacionController.swift */; };
 		FB5FE72F291AAEE600F2957B /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FE72E291AAEE600F2957B /* Evaluacion.swift */; };
@@ -80,6 +82,8 @@
 		FB1678452915687400460103 /* CeldaAsistenciaControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaControllelr.swift; sourceTree = "<group>"; };
 		FB3914FE291953360069F7BF /* CeldaActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaActualizarController.swift; sourceTree = "<group>"; };
 		FB3FF50429199F6E00D79FBF /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		FB55CB8C29252B2A0061EE85 /* Freshman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Freshman.ttf; sourceTree = "<group>"; };
+		FB55CB8E29252B560061EE85 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		FB5E1E1A2923F16D00865DD2 /* MarcarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcarController.swift; sourceTree = "<group>"; };
 		FB5FE72C291AAED300F2957B /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
 		FB5FE72E291AAEE600F2957B /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 		3D5AFA04290C1B0400A338C4 /* Proyecto_3 */ = {
 			isa = PBXGroup;
 			children = (
+				FB55CB8E29252B560061EE85 /* Roboto-Regular.ttf */,
+				FB55CB8C29252B2A0061EE85 /* Freshman.ttf */,
 				3D5AFA38290C1B7D00A338C4 /* Delegue */,
 				3D5AFA36290C1B4500A338C4 /* Assetes */,
 				3D5AFA35290C1B2F00A338C4 /* Vistas */,
@@ -392,7 +398,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB55CB8D29252B2A0061EE85 /* Freshman.ttf in Resources */,
 				3D5AFA12290C1B0600A338C4 /* LaunchScreen.storyboard in Resources */,
+				FB55CB8F29252B560061EE85 /* Roboto-Regular.ttf in Resources */,
 				3D5AFA0F290C1B0600A338C4 /* Assets.xcassets in Resources */,
 				3D5AFA0D290C1B0400A338C4 /* Main.storyboard in Resources */,
 			);
