@@ -14,6 +14,9 @@ class PagoController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tvPago: UITableView!
     @IBOutlet weak var tvPagos: UITableView!
     
+    @IBOutlet weak var vMorado: UIView!
+    
+    
     //Variables
     var pago : [Pago] = []
     var pagos: [Pagos] = []
@@ -34,6 +37,10 @@ class PagoController: UIViewController, UITableViewDelegate, UITableViewDataSour
         pagos.append(Pagos(mes: "Septiembre", pagado: "15 de Septiembre"))
         pagos.append(Pagos(mes: "Octubre", pagado: "15 de Septiembre"))
         //pagos.append(Pagos(mes: "Noviembre", pagado: "1 de Octubre"))
+        
+        //View
+        vMorado.layer.cornerRadius = 50
+        vMorado.layer.cornerRadius = 10
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

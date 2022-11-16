@@ -15,7 +15,6 @@ class CalificarController : UIViewController {
     @IBOutlet weak var txtComent: UITextField!
     
     @IBOutlet weak var vFondo: UIView!
-    @IBOutlet weak var vBotton: UIView!
     
     @IBOutlet weak var btnCal: UIButton!
     //Variables
@@ -25,12 +24,6 @@ class CalificarController : UIViewController {
     //Codigo
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        vFondo.layer.cornerRadius = 50
-        vFondo.layer.cornerRadius = 8
-        
-        vBotton.layer.cornerRadius = 50
-        vBotton.layer.cornerRadius = 8
         
         if eva != nil {
             

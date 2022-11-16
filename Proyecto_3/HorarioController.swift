@@ -22,8 +22,11 @@ class HorarioController : UIViewController, UITableViewDelegate, UITableViewData
         tvHorario.backgroundColor = .clear
         
         horario.append(Horario(clase: "Matematicas", hora: "2pm - 4pm", maestro: "Luis Olea", aula: "A15"))
-        horario.append(Horario(clase: "Moviles", hora: "7am - 10am", maestro: "Emiliano", aula: "D5"))
+        horario.append(Horario(clase: "Moviles", hora: "7am - 9am", maestro: "Emiliano", aula: "D5"))
         horario.append(Horario(clase: "Diosito", hora: "12pm - 1pm", maestro: "Jorge", aula: "A12"))
+        horario.append(Horario(clase: "Mercadotecnia", hora: "5pm - 6pm", maestro: "Yuriria", aula: "A13"))
+        horario.append(Horario(clase: "Redes", hora: "7pm - 9pm", maestro: "Ruben", aula: "E3"))
+        horario.append(Horario(clase: "Modelado", hora: "9am - 12pm", maestro: "Jorge", aula: "A12"))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
