@@ -18,18 +18,18 @@ class MenuController : UIViewController, UICollectionViewDataSource, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menu.append(Menu(nombre: "Sopa de Camaron", timpo: "Comida del Dia", horapedido: "2pm", costo: "50", imagen: ""))
-        menu.append(Menu(nombre: "Sandwich", timpo: "Diario", horapedido: "Siempre", costo: "23", imagen: ""))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
-        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "Perfil"))
+        menu.append(Menu(nombre: "Sopa de Camaron", timpo: "Comida del Dia", horapedido: "2pm", costo: "50", imagen: "sopa"))
+        menu.append(Menu(nombre: "Sandwich", timpo: "Diario", horapedido: "Siempre", costo: "23", imagen: "san"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "huevo"))
+        menu.append(Menu(nombre: "Burritos", timpo: "Diario", horapedido: "Siempre", costo: "20", imagen: "burro"))
+        menu.append(Menu(nombre: "Chocolate", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "choco"))
+        menu.append(Menu(nombre: "Chocomilk", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "milk"))
+        menu.append(Menu(nombre: "Sopa de Camaron", timpo: "Comida del Dia", horapedido: "2pm", costo: "50", imagen: "sopa"))
+        menu.append(Menu(nombre: "Sandwich", timpo: "Diario", horapedido: "Siempre", costo: "23", imagen: "san"))
+        menu.append(Menu(nombre: "Huevito", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "huevo"))
+        menu.append(Menu(nombre: "Burritos", timpo: "Diario", horapedido: "Siempre", costo: "20", imagen: "burro"))
+        menu.append(Menu(nombre: "Chocolate", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "choco"))
+        menu.append(Menu(nombre: "Chocomilk", timpo: "Desayuno", horapedido: "7am - 10am", costo: "20", imagen: "milk"))
         
     }
     

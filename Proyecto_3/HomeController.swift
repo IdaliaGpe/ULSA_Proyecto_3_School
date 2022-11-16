@@ -28,6 +28,12 @@ class HomeController : UIViewController {
     @IBOutlet weak var vCal: UIView!
     @IBOutlet weak var vMenu: UIView!
     
+    @IBOutlet weak var btnHorario: UIButton!
+    @IBOutlet weak var btnAsis: UIButton!
+    @IBOutlet weak var btnEva: UIButton!
+    @IBOutlet weak var btnPagos: UIButton!
+    @IBOutlet weak var btnMenu: UIButton!
+    
     //Variable
     var alumno : [Alumno] = []
     var contacto : [Contacto] = []
@@ -113,6 +119,14 @@ class HomeController : UIViewController {
         
         vMenu.layer.cornerRadius = 50
         vMenu.layer.cornerRadius = 10
+        
+        //Botones
+        btnHorario.titleLabel?.font = UIFont(name: "Impact", size: 22)
+        btnAsis.titleLabel?.font = UIFont(name: "Impact", size: 22)
+        btnEva.titleLabel?.font = UIFont(name: "Impact", size: 22)
+        btnPagos.titleLabel?.font = UIFont(name: "Impact", size: 22)
+        btnMenu.titleLabel?.font = UIFont(name: "Impact", size: 22)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -128,6 +142,7 @@ class HomeController : UIViewController {
             let destino = segue.destination as! AsistenciaController
             destino.check = check
         }
+        
     }
     
 }
